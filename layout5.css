@@ -1,0 +1,15 @@
+﻿*{
+    box-sizing:border-box;
+    margin:0px auto;
+    padding:0px;
+}
+#contai{
+    width:100%;
+    height:700px;
+    border:1px solid black;
+    border-color:darkgoldenrod;
+
+}
+header{
+
+}

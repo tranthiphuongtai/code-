@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container, .row {
+            width: 100%;
+        }
+
+            .row:before, .row:after {
+                display: table;
+                content: "";
+            }
+
+            .row:after {
+                clear: both;
+            }
+
+        .col1, .col2, .col3 {
+            float: left;
+            width: 25.333333%;
+            margin: 1%;
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <p>
+                    CSS3 cho phép thêm nhiều hình nền cho trang Web thông  qua thuộc tính background-image.
+                    Tạo trang Web với 2 hình nền, hình thứ nhất được canh lề = dưới bên phải,  hình thứ 2 được canh lền trên bên trái.
+                </p>
+            </div>
+            <div class="col2">
+                <p>
+                    Tạo bảng dùng loại font chữ "Trebuchet MS, Arial, Helvetica, sans-serif" và mã màu #993738. Các thuộc tính này phải dùng cho các tag table, tr, td, và th. Lưu ý các dòng chẵn, dòng lẻ có màu khác nhau (sử dụng class chẵn, lẻ với màu khác nhau).
+                    Cột bên trái được canh lề trái, cột bên phải được canh lề phải. (Có thể dùng thành phần pseudo-element là “last-child”.
+                </p>
+            </div>
+            <div class="col3">
+                <p>
+                    Thuộc tính direction được sử dụng để thiết lập hướng cho đoạn văn bản.
+                    Thuộc tính letter-spacing được sử dụng để thêm hoặc bớt khoảng cách giữa các chữ cái trong một từ.
+                    Thuộc
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <p>
+                    Thuộc tính direction được sử dụng để thiết lập hướng cho đoạn văn bản.
+                    Thuộc tính letter-spacing được sử dụng để thêm hoặc bớt khoảng cách giữa các chữ cái trong một từ.
+                    Thuộc
+                </p>
+            </div>
+            <div class="col2">
+                <p>
+                    Xác định có hay không một thành phần được float.
+                    Float (thả  trôi) là một thuộc tính CSS dùng để cố định một thành phần web về bên trái hay bên phải không gian bao quanh nó.
+                </p>
+            </div>
+            <div class="col3">
+                <p>Chọn thành phần đầu tiên của thành phần cha chứa nó.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #animated{
+            position:absolute;
+            width:100px;
+            height:100px;
+            left:0px;
+            top: 100px;
+            background: #ffd800;
+        }
+        @-webkit-keyframes scroll{
+            to{
+                left:100%;
+                -webkit-transform: rotate(180deg);
+            }
+        }
+        @-moz-keyframes scroll{
+            to{
+                left:100%;
+                -moz-transform: rotate(180deg);
+            }
+        }
+        @-o-keyframes scroll{
+            to{
+                left:100%;
+                -o-transform: rotate(180deg)
+            }
+        }
+        @keyframes scroll{
+            to{
+                left :100%;
+                transform: rotate(180deg);
+            }
+        }
+        div {
+            animation-name: scroll;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            
+        }
+    </style>
+</head>
+<body>
+  <div id="animated">
+     <p align="center">Example 10</p>
+  </div>
+</body>
+</html>

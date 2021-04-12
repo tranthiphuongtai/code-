@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            display:block;
+            position: absolute;
+            width:100%;
+            background-color: aqua;
+            top:0px;
+            font-size: 24px;
+        }
+        #Menu1 >li {
+            border-right: 1px solid #808080;
+            padding:16px; 
+            margin: 5px 5px 5px -5px;
+            background-color: aqua;
+        }
+        li{
+            list-style-type: none;
+            display: inline;
+            margin-left: 50px;
+            
+        }
+        a:link{
+            color: white;
+            text-decoration:none;
+        }
+        a:hover {
+            top: auto;
+            color: white;
+            text-decoration: none;
+        }
+        li > ul{
+            display:none;
+           
+        }
+        li:hover ul {
+            background-color: aqua;
+            display:block;
+            position:  fixed;
+            left: 280px;
+            margin: 0;
+            line-height: 30px;
+        }
+
+            li:hover ul li a:link {
+                display: block;
+                margin-left: -40px;
+                background-color: #714d4d;
+            }
+       #s1:hover a:link{
+          
+           background-color: #714d4d;
+           height:auto;
+           width: auto;
+       }
+       #Menu1>li{
+           display:inline-block;
+           
+       }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="Menu1">
+            <li id="s4"><a href="#">Home</a></li>
+            <li><a href="#">Introdution</a></li>
+            <li><a href="#"> Portfolio </a>
+                <ul id="Menu2">
+                    <li id="s1"> <a href="#">Photography </a></li>
+                    <li id="s1"> <a href="#">Web & User interface Design </a></li>
+                    <li id="s1"> <a href="#">Illustration</a>  </li>
+                </ul>
+
+            </li>
+            <li><a href="#"> News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

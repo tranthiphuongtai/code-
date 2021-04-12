@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 - CSS</title>
+    <style>
+        .nav li{
+            background: #0d90df;
+            border: 2px dashed white;
+            text-decoration: none;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+            box-shadow: 0 0 0 4px #0d90df, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+            border-radius: 10px;
+            line-height: 1.3em;
+            text-shadow: -1px -1px #aa3030;
+            font-weight: normal;
+            text-align: center;
+            position: relative;
+        }
+        .nav li a {
+            color: blue;
+            text-decoration: none;
+        }
+        .nav, .subnav{
+            list-style-type: none;
+        }
+        .nav li:hover .subnav{
+            display: block;
+        }
+        .nav li .subnav{
+            display: none;
+            position:absolute;
+            left: 68px;
+            top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li>
+                <a href="#">Products</a>
+                <ul class="subnav">
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Web & User Interface Design</a></li>
+                    <li><a href="#">IIIustration</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
